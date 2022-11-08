@@ -1,0 +1,19 @@
+{
+  "name": "shareme-backend",
+  "version": "1.0.0",
+  "description": "Backed of ShareMe Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizwan-zafar/shareme-backend.git"
+  },
+  "author": "Rizwan Zafar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizwan-zafar/shareme-backend/issues"
+  },
+  "homepage": "https://github.com/rizwan-zafar/shareme-backend#readme"
+}
