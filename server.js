@@ -27,6 +27,6 @@ app.use((req, resp, next) => {
 })
 app.use("/shareme/api/v1", VideoRoute)
 
-app.listen(2000, () => {
+app.listen(process.env.PORT || 2000, () => {
     console.log("ShareMe NodeServer Started")
 })
