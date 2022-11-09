@@ -1,14 +1,16 @@
-const express = require("express")
-const mongoose = require("mongoose")
-const VideoRoute = require("./routeController/videos")
+// const express = require("express")
+// const mongoose = require("mongoose")
+// const VideoRoute = require("./routeController/videos")
+
+import express from "express";
+import mongoose from "mongoose"
+import VideoRoute from "./routeController/videos.js"
 const app = express()
 app.use(express.json())
 
 // connect with monogdb
 const connection_Url = "mongodb+srv://rizwanzafar:fqbQ4QQgz3EMS01d@cluster0.ysnrolt.mongodb.net/ShareMe_db?retryWrites=true&w=majority"
-mongoose.connect(connection_Url,{
-    useUnifiedTopology: false,
-});
+mongoose.connect(connection_Url,);
 const con = mongoose.connection;
 con.on('open', () => {
     console.log("Connected");

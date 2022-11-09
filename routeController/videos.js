@@ -1,5 +1,7 @@
-const express=require("express")
-const Video=require("../Models/dbModel")
+// const express=require("express")
+// const Video=require("../Models/dbModel")
+import express from "express"
+import Video from "../Models/dbModel.js"
 const route=express.Router();
 
 route.get('/',async (req,resp)=>{
@@ -30,4 +32,4 @@ route.post('/',async (req,resp)=>{
 })
 
 
-module.exports =route
+export default route

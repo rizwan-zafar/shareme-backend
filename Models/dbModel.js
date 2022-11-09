@@ -1,5 +1,6 @@
-const mongoose = require("mongoose")
-const schema = new mongoose.Schema({
+// const mongoose = require("mongoose")
+import mongoose from "mongoose";
+const schema =  mongoose.Schema({
     url: {
         type: String,
         require: true
@@ -30,6 +31,6 @@ const schema = new mongoose.Schema({
     },
 })
 
-module.exports = mongoose.model('shareMeVideos', schema)
+export default mongoose.model('shareMeVideos', schema)
 
  
