@@ -15,7 +15,7 @@ con.on('open', () => {
 
 
 
-app.get("/shareMeSmokeTest", async (req, resp) => {
+app.get("/", async (req, resp) => {
     resp.send("Smoke Test Successful for ShareMe Project")
 })
 
