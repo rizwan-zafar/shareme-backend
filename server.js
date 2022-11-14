@@ -1,20 +1,21 @@
-// const express = require("express")
-// const mongoose = require("mongoose")
-// const VideoRoute = require("./routeController/videos")
-
 import express from "express";
 import mongoose from "mongoose"
 import VideoRoute from "./routeController/videos.js"
 const app = express()
 app.use(express.json())
 
+// mongodb+srv://rizwanzafar:w1mdNi5kzaw0DNub@cluster0.rapbj2x.mongodb.net/?retryWrites=true&w=majority
 // connect with monogdb
-const connection_Url = "mongodb+srv://rizwanzafar:fqbQ4QQgz3EMS01d@cluster0.ysnrolt.mongodb.net/ShareMe_db?retryWrites=true&w=majority"
-mongoose.connect(connection_Url,);
-const con = mongoose.connection;
-con.on('open', () => {
-    console.log("Connected");
-})
+const connection_Url = "mongodb+srv://rizwanzafar:RRvuaqI5E4mM20Gf@cluster0.p9my2gr.mongodb.net/Share_Me?retryWrites=true&w=majority"
+mongoose.connect(connection_Url,{}).then(()=>{ 
+    console.log("Database Connected")
+}).catch((e)=>{console.log("database error " +e)})
+ 
+ 
+// const con = mongoose.connection;
+// con.on('open', () => {
+//     console.log("Connected");
+// })
 // end connect with mongodb
 
 
